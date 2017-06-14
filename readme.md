@@ -1,5 +1,12 @@
-# Django Model and CRUD Example
+# Django Project Example
 ![Imgur](http://i.imgur.com/f1wjEMX.jpg)
+
+## Target :
+* Setup Project & Apps
+* Model with all common used data type
+* Web form CRUD
+* Model association & One-to-Many Web form CRUD
+* Login, Logout, Remember Password, Session.
 
 ### 1. Install and Setup Django
 * Install django through pip, execute cmd: `pip install Django`
@@ -40,7 +47,7 @@
  * Create an admin account, execute cmd: `python manage.py createsuperuser`
 
 ### 4. Model Fields
-* Common used database field data type:
+* Common used MySQL database field to Django data type:
 
 | MySQL Field| Django Model Field | Parameters |
 |---|---|---|
@@ -69,7 +76,6 @@ For further information, view the [reference](https://docs.djangoproject.com/en/
     
 ### Other Reference
 * [Writing your first Django app, part 1](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
-* [Writing your first Django app, part 2](https://docs.djangoproject.com/en/1.11/intro/tutorial02/)
 * [Database Model Fields Reference](https://docs.djangoproject.com/en/1.11/ref/models/fields/)
 * [Database Model Meta Options Reference](https://docs.djangoproject.com/en/1.11/ref/models/options/)
 * [Using a 3rd-party database backend](https://docs.djangoproject.com/en/1.11/ref/databases/#using-a-3rd-party-database-backend)
