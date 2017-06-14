@@ -52,15 +52,15 @@
 
 | MySQL Field| Django Model Field | Parameters |
 |---|---|---|
-| VARCHAR | CharField | max_length, unique, null, blank, default, primary_key |
-| LONGTEXT | TextField | null, blank, default |
-| INT | IntegerField | null, default |
-| DECIMAL | DecimalField | null, default |
-| TINYINT/BOOLEAN | BooleanField | null, default |
-| DATE | DateField | null, default |
-| TIME | TimeField | null, default |
-| DATETIME | DateTimeField | null, default |
-| LONGBLOB | BinaryField | null, default |
+| VARCHAR | `CharField` | max_length, unique, null, blank, default, primary_key |
+| LONGTEXT | `TextField` | null, blank, default |
+| INT | `IntegerField` | null, default |
+| DECIMAL | `DecimalField` | null, default |
+| TINYINT/BOOLEAN | `BooleanField` | null, default |
+| DATE | `DateField` | null, default |
+| TIME | `TimeField` | null, default |
+| DATETIME | `DateTimeField` | null, default |
+| LONGBLOB | `BinaryField` | null, default |
 
 For further information, view the [reference](https://docs.djangoproject.com/en/1.11/ref/models/fields/)
 
