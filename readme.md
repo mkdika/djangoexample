@@ -84,3 +84,4 @@ For further information, view the [reference](https://docs.djangoproject.com/en/
 * [Database Model Meta Options Reference](https://docs.djangoproject.com/en/1.11/ref/models/options/)
 * [Using a 3rd-party database backend](https://docs.djangoproject.com/en/1.11/ref/databases/#using-a-3rd-party-database-backend)
 * [Add User Profile To Django Admin](https://simpleisbetterthancomplex.com/tutorial/2016/11/23/how-to-add-user-profile-to-django-admin.html)
+* [5 ways to make Django Admin safer](https://hackernoon.com/5-ways-to-make-django-admin-safer-eb7753698ac8)
