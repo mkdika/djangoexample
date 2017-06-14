@@ -43,6 +43,9 @@
 * To make a new migration by certain apps, execute cmd: `python manage.py makemigrations <apps-name>`
 * To apply database changes, execute cmd: `python manage.py migrate`	
 * Time zone setup, look for `TIME_ZONE` variable, list of **TZ** available [Here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+```python
+    TIME_ZONE = 'Asia/Jakarta'
+```
 
 ### 3. Admin Page
  * Create an admin account, execute cmd: `python manage.py createsuperuser`
