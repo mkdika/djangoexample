@@ -8,7 +8,7 @@
 * Model association & One-to-Many Web form CRUD
 * Login, Logout, Remember Password, Session.
 
-### 1. Install and Setup Django
+### 1. Install and Create Django Project
 * Install django through pip, execute cmd: `pip install Django`
 * Check installed django version, execute cmd: `python -m django --version`
 * Creating a new project, execute cmd: `django-admin startproject <project-name>`
@@ -16,7 +16,7 @@
 * To run server, execute cmd: `python manage.py runserver`
 * Run server with custom port, execute cmd: `python manage.py runserver 9696`
 
-### 2. Database Setup
+### 2. Project Setup
 * Open file `<project-name>/settings.py`
 * Search for `DATABASE` pythons dictionary variable.
 * Default `ENGINE`is SQLite: `django.db.backends.sqlite3`
@@ -42,6 +42,7 @@
 * To make a new migration of changes, execute cmd: `python manage.py makemigrations`    
 * To make a new migration by certain apps, execute cmd: `python manage.py makemigrations <apps-name>`
 * To apply database changes, execute cmd: `python manage.py migrate`	
+* Time zone setup, look for `TIME_ZONE` variable, list of **TZ** available [Here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
 
 ### 3. Admin Page
  * Create an admin account, execute cmd: `python manage.py createsuperuser`
