@@ -1,6 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from crud.forms import NewPerson
+from crud.models import Person
+
+def index(request):
+    person_list = Person.objects.order_by('first_name')
+    response_dict = {
+        'person_list': person_list,
+    }
+    return render(request, 'crud/index.html', context=response_dict)
 
 
 def addNewPerson(request):
@@ -28,4 +36,4 @@ def addNewPerson(request):
             return addNewPerson(request)
         else:
             print("ERROR FORM INVALID!")
-    return HttpResponse("Save Success!")
+    return render(request, 'crud/personform.html', {'form': form})
