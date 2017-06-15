@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="btn-group">
-    <a href="addnewperson/" class="btn  btn-danger" />Add New Person</a>
+    <a href="addnewperson" class="btn  btn-primary">Add New Person</a>
 </div>
 
 <div>
@@ -20,11 +20,13 @@
             <!-- Table -->
             <table class="table">
                 <thead>
+
                 <th width='200px'>First Name</th>
                 <th width='200px'>Last Name</th>
                 <th width='200px'>E-mail</th>
                 <th width='100px'>Is Male</th>
-                <th>Birth Date</th>
+                <th width='150px'>Birth Date</th>
+                <th></th>
                 </thead>
 
                 {% for person in person_list %}
@@ -34,6 +36,16 @@
                         <td>{{ person.email }}</td>
                         <td>{{ person.is_male }}</td>
                         <td>{{ person.birth_date }}</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a href="" class="btn btn-xs btn-success">
+                                    <span class="glyphicon glyphicon-edit" aria-hidden="true"/>
+                                </a>
+                                <a href="" class="btn btn-xs btn-warning">
+                                    <span class="glyphicon glyphicon-trash" aria-hidden="true"/>
+                                </a>
+                            </div>
+                        </td>
                     </tr>
                 {% endfor %}
             </table>

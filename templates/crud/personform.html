@@ -9,13 +9,14 @@
 </head>
 <body>
 <div class="page-header">
-  <h2>Fill Person Data</h2>
+    <h2>Fill Person Data</h2>
 </div>
 <div class="container">
     <form action="" method="POST" role="form">
         {{ form|bootstrap }}
         {% csrf_token %}
         <input type="submit" class="btn btn-primary" value="Submit">
+        <a href="/crud" class="btn  btn-warning"/>Cancel</a>
     </form>
 </div>
 

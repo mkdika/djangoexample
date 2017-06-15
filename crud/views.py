@@ -5,11 +5,14 @@ from crud.models import Person
 
 
 def index(request):
-    person_list = Person.objects.order_by('first_name')
+    # person_list = Person.objects.order_by('first_name') # find all Person order by its first_name
+    person_list = Person.objects.raw('SELECT * FROM tb_person ORDER BY first_name') # use native/raw queries
     response_dict = {
         'person_list': person_list,
     }
     return render(request, 'crud/index.html', context=response_dict)
+
+
 
 
 def addNewPerson(request):
