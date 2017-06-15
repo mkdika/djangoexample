@@ -75,13 +75,19 @@ For further information, view the [reference](https://docs.djangoproject.com/en/
     ```
 * Install Python PostgreSQL:
     ```commandline
-    pip install psycopg2   
+    pip install psycopg2     
     ```
+* Install Django Bootstrap Form
+    ```commandline
+    pip install django-bootstrap-form     
+    ```    
     
 ### Other Reference
 * [Writing your first Django app, part 1](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
 * [Database Model Fields Reference](https://docs.djangoproject.com/en/1.11/ref/models/fields/)
 * [Database Model Meta Options Reference](https://docs.djangoproject.com/en/1.11/ref/models/options/)
 * [Using a 3rd-party database backend](https://docs.djangoproject.com/en/1.11/ref/databases/#using-a-3rd-party-database-backend)
+* [Django Bootstrap Form 1](https://django-bootstrap-form.readthedocs.io/en/latest/)
+* [Django Bootstrap Form 2](https://github.com/tzangms/django-bootstrap-form)
 * [Add User Profile To Django Admin](https://simpleisbetterthancomplex.com/tutorial/2016/11/23/how-to-add-user-profile-to-django-admin.html)
 * [5 ways to make Django Admin safer](https://hackernoon.com/5-ways-to-make-django-admin-safer-eb7753698ac8)

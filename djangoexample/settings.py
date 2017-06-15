@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crud.apps.CrudConfig',
     'django_jinja',
+    'bootstrapform',
 ]
 
 MIDDLEWARE = [

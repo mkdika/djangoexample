@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 {% load staticfiles %}
+{% load bootstrap %}
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Person Form | Page</title>
+    <title>Person Data Form | Page</title>
     <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
 </head>
 <body>
-<h3>Fill Person:</h3>
+<div class="page-header">
+  <h2>Fill Person Data</h2>
+</div>
 <div class="container">
-    <form action="" method="POST">
-        {{ form.as_p }}
+    <form action="" method="POST" role="form">
+        {{ form|bootstrap }}
         {% csrf_token %}
         <input type="submit" class="btn btn-primary" value="Submit">
     </form>

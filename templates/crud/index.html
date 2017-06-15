@@ -7,26 +7,40 @@
     <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
 </head>
 <body>
-<div>
-    <a href="addnewperson/"/>Add New Person</a>
+<div class="btn-group">
+    <a href="addnewperson/" class="btn  btn-danger" />Add New Person</a>
 </div>
+
 <div>
     {% if person_list %}
-        <table>
-            <thead>
-            <th width='200px'>First Name</th>
-            <th width='200px'>Last Name</th>
-            <th>Email</th>
-            </thead>
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">List of Person</div>
 
-            {% for person in person_list %}
-                <tr>
-                    <td>{{ person.first_name }}</td>
-                    <td>{{ person.last_name }}</td>
-                    <td>{{ person.email }}</td>
-                </tr>
-            {% endfor %}
-        </table>
+            <!-- Table -->
+            <table class="table">
+                <thead>
+                <th width='200px'>First Name</th>
+                <th width='200px'>Last Name</th>
+                <th width='200px'>E-mail</th>
+                <th width='100px'>Is Male</th>
+                <th>Birth Date</th>
+                </thead>
+
+                {% for person in person_list %}
+                    <tr>
+                        <td>{{ person.first_name }}</td>
+                        <td>{{ person.last_name }}</td>
+                        <td>{{ person.email }}</td>
+                        <td>{{ person.is_male }}</td>
+                        <td>{{ person.birth_date }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+
+
+
     {% else %}
         <p>NO PERSON DATA FOUND!</p>
     {% endif %}

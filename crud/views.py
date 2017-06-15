@@ -1,7 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
 from crud.forms import NewPerson
 from crud.models import Person
+
 
 def index(request):
     person_list = Person.objects.order_by('first_name')
@@ -12,7 +13,7 @@ def index(request):
 
 
 def addNewPerson(request):
-    # return HttpResponse("Hello World!")
+    # Generate form base on View
     form = NewPerson()
 
     # Check to see if we get a POST back.
@@ -22,18 +23,27 @@ def addNewPerson(request):
 
         # Check to see form is valid
         if form.is_valid():
-            # print('Form Validation Success. Print to console.')
-            # print("Name: " + form.cleaned_data['name'])
-            # print("Is Male: " + str(form.cleaned_data['is_male']))
-            # print("Birthdate: " + str(form.cleaned_data['birthdate']))
-            # print("Height: " + str(form.cleaned_data['height']))
-            # print("Weight: " + str(form.cleaned_data['weight']))
-            # print("Email: " + form.cleaned_data['email'])
-            # print("address: " + form.cleaned_data['address'])
-            # print("Saving...")
+            print('Form Validation Success. Print to console.')
+            print("UID: " + form.cleaned_data['uid'])
+            print("First Name: " + form.cleaned_data['first_name'])
+            print("Lastname Name: " + form.cleaned_data['last_name'])
+            print("Is Male: " + str(form.cleaned_data['is_male']))
+            print("Birth Date: " + str(form.cleaned_data['birth_date']))
+            print("Birth Time: " + str(form.cleaned_data['birth_time']))
+            print("Email: " + form.cleaned_data['email'])
+            print("Address: " + form.cleaned_data['address'])
+            print("Height: " + str(form.cleaned_data['first_name']))
+            print("Weight: " + str(form.cleaned_data['first_name']))
+            print("Last Education: " + form.cleaned_data['last_education'])
+            if form.cleaned_data['first_name'] is None:
+                print("Photo is Null")
+            else:
+                print("Photo is NOT Null")
+
+            print("Saving...")
             form.save(commit=True)
-            print('saved')
-            return addNewPerson(request)
+            print('Saved!')
+            return index(request)
         else:
             print("ERROR FORM INVALID!")
     return render(request, 'crud/personform.html', {'form': form})
