@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Person List | Page</title>
     <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
+
 </head>
 <body>
 <div class="btn-group">
@@ -20,7 +21,7 @@
             <!-- Table -->
             <table class="table">
                 <thead>
-
+                <th width='150px'>UID</th>
                 <th width='200px'>First Name</th>
                 <th width='200px'>Last Name</th>
                 <th width='200px'>E-mail</th>
@@ -31,6 +32,7 @@
 
                 {% for person in person_list %}
                     <tr>
+                        <td>{{ person.uid }}</td>
                         <td>{{ person.first_name }}</td>
                         <td>{{ person.last_name }}</td>
                         <td>{{ person.email }}</td>
@@ -38,12 +40,13 @@
                         <td>{{ person.birth_date }}</td>
                         <td>
                             <div class="btn-group" role="group">
-                                <a href="" class="btn btn-xs btn-success">
+                                <input type="hidden" value="{{ person.uid }}" id="uid"/>
+                                <button type="button" class="btn btn-s btn-success" id="btnEdit" onclick="editPerson('editperson/{{ person.uid }}');">
                                     <span class="glyphicon glyphicon-edit" aria-hidden="true"/>
-                                </a>
-                                <a href="" class="btn btn-xs btn-warning">
+                                </button>
+                                <button type="button" class="btn btn-s btn-warning" id="btnDelete" onclick="confirmDelete('{{ person.uid }}','deleteperson/{{ person.uid }}');">
                                     <span class="glyphicon glyphicon-trash" aria-hidden="true"/>
-                                </a>
+                                </button>
                             </div>
                         </td>
                     </tr>
@@ -51,18 +54,17 @@
             </table>
         </div>
 
-
-
     {% else %}
         <p>NO PERSON DATA FOUND!</p>
     {% endif %}
 </div>
-
 
 <!-- jQuery -->
 <script src="{% static "js/jquery-3.2.1.min.js" %}"></script>
 
 <!-- bootstrap -->
 <script src="{% static "js/bootstrap.min.js" %}"></script>
+<script src="{% static "js/bootbox.min.js" %}"></script>
+<script src="{% static "js/custom.js" %}"></script>
 </body>
 </html>
