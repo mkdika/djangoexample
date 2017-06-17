@@ -23,6 +23,7 @@ class Person(models.Model):
     birth_time = models.TimeField()
     registration_time = models.DateTimeField()
     email = models.EmailField(null=True)
+    website = models.URLField(null=True)
     address = models.TextField(null=True)
     height = models.DecimalField(decimal_places=2, max_digits=5, null=True)
     weight = models.DecimalField(decimal_places=2, max_digits=5, null=True)

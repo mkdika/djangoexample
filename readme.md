@@ -56,6 +56,8 @@
 | MySQL Field| Django Model Field | Parameters |
 |---|---|---|
 | `VARCHAR` | `CharField` | max_length, unique, null, blank, default, primary_key |
+| `VARCHAR` | `EmailField` | null, blank, default |
+| `VARHCAR` | `URLField` | null, blank, default |
 | `LONGTEXT` | `TextField` | null, blank, default |
 | `INT` | `IntegerField` | null, default |
 | `DECIMAL` | `DecimalField` | null, default |
@@ -85,6 +87,10 @@ For further information, view the [reference](https://docs.djangoproject.com/en/
     ```commandline
     pip install django-bootstrap-form     
     ```      
+* Install Pillow Lib (Image manipulation library for Python)
+    ```commandline
+    pip install pillow     
+    ```       
     
 ### Other References
 * [Writing your first Django app, part 1](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
