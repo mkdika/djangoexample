@@ -67,6 +67,11 @@
 | `DATETIME` | `DateTimeField` | null, default |
 | `LONGBLOB` | `BinaryField` | null, default |
 
+* Django database association data type:
+    * `ForeignKey` , a field type that allows us to create a **one-to-many** relationship.
+    * `OneToOneField` , a field type that allows us to define a strict **one-to-one** relationship.
+    * `ManyToManyField` , a field type which allows us to define a **many-to-many** relationship.
+
 For further information, view the [reference](https://docs.djangoproject.com/en/1.11/ref/models/fields/)
 
 ### 5. Making Model Queries
