@@ -82,8 +82,9 @@ For further information, view the [reference](https://docs.djangoproject.com/en/
     ```python
       Person.objects.all() 
     ```
-* [Making Queries](https://docs.djangoproject.com/en/1.11/topics/db/queries/)
-* [Performing raw SQL queries](https://docs.djangoproject.com/en/1.11/topics/db/sql/)
+* __Queries References__:
+    * [Making Queries](https://docs.djangoproject.com/en/1.11/topics/db/queries/)
+    * [Performing raw SQL queries](https://docs.djangoproject.com/en/1.11/topics/db/sql/)
 
 
 ### 6. Other Library and Addons
