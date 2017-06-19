@@ -4,7 +4,8 @@
 ## Target :
 * Setup Project & Apps
 * Model with all common used data type
-* Web form CRUD
+* Web form CRUD single table
+* User Authenticaton
 * Model association & One-to-Many Web form CRUD
 * Login, Logout, Remember Password, Session.
 
@@ -73,8 +74,9 @@
     * `ForeignKey` , a field type that allows us to create a **one-to-many** relationship.
     * `OneToOneField` , a field type that allows us to define a strict **one-to-one** relationship.
     * `ManyToManyField` , a field type which allows us to define a **many-to-many** relationship.
-
-For further information, view the [reference](https://docs.djangoproject.com/en/1.11/ref/models/fields/)
+* __References__:
+    * [Database Model Fields Reference](https://docs.djangoproject.com/en/1.11/ref/models/fields/)
+    * [Database Model Meta Options Reference](https://docs.djangoproject.com/en/1.11/ref/models/options/)
 
 ### 5. Making Model Queries
 * Some queries example:
@@ -82,12 +84,24 @@ For further information, view the [reference](https://docs.djangoproject.com/en/
     ```python
       Person.objects.all() 
     ```
-* __Queries References__:
+    * Select with criteria filter & order DESC
+    ```python
+      Person.objects.filter(id=23).order_by('-first_name')
+    ``` 
+* __References__:
     * [Making Queries](https://docs.djangoproject.com/en/1.11/topics/db/queries/)
     * [Performing raw SQL queries](https://docs.djangoproject.com/en/1.11/topics/db/sql/)
 
+### 6. Forms Validator
+* __References__:
+    * [Form and field validation](https://docs.djangoproject.com/en/1.11/ref/forms/validation/)
+    * [Form Validators](https://docs.djangoproject.com/en/1.11/ref/validators/)
 
-### 6. Other Library and Addons
+### 7. View
+* __References__:
+    * [Class-based Views](https://docs.djangoproject.com/en/1.10/topics/class-based-views/)
+
+### 8. Other Library and Addons
 * Install Python MySQL:
     ```commandline
     pip install mysqlclient  
@@ -103,14 +117,15 @@ For further information, view the [reference](https://docs.djangoproject.com/en/
 * Install Pillow Lib (Image manipulation library for Python)
     ```commandline
     pip install pillow     
-    ```       
-    
+    ```           
+* Install Bcrypt (Secure Password Hasher)
+    ```commandline
+    pip install bcrypt     
+    ``` 
+        
 ### Other References
 * [Writing your first Django app, part 1](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
-* [Database Model Fields Reference](https://docs.djangoproject.com/en/1.11/ref/models/fields/)
-* [Database Model Meta Options Reference](https://docs.djangoproject.com/en/1.11/ref/models/options/)
 * [Using a 3rd-party database backend](https://docs.djangoproject.com/en/1.11/ref/databases/#using-a-3rd-party-database-backend)
-* [Class-based Views](https://docs.djangoproject.com/en/1.10/topics/class-based-views/)
 * [Django-Bootstrap-Form Lib 1](https://django-bootstrap-form.readthedocs.io/en/latest/)
 * [Django-Bootstrap-Form Lib 2](https://github.com/tzangms/django-bootstrap-form)
 * [Add User Profile To Django Admin](https://simpleisbetterthancomplex.com/tutorial/2016/11/23/how-to-add-user-profile-to-django-admin.html)

@@ -24,6 +24,13 @@ MEDIA_DIR = os.path.join(BASE_DIR, 'media')
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'ymw)u8oy4^hc4!!2)224f%g)-%vy_s23%8jdnn@3b4b_2ufq)d'
 
+PASSWORD_HASHERS = [
+    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
+    'django.contrib.auth.hashers.BCryptPasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+]
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -41,6 +48,7 @@ INSTALLED_APPS = [
     'crud.apps.CrudConfig',
     'django_jinja',
     'bootstrapform',
+    'userauth',
 ]
 
 MIDDLEWARE = [
@@ -114,6 +122,10 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'Asia/Jakarta'
+
+DATE_INPUT_FORMATS = [
+    '%d/%m/%Y',
+]
 
 USE_I18N = True
 
