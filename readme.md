@@ -20,6 +20,9 @@
   
     # to deactivate virtual environment
     source deactivate mydjango
+  
+    # to remove virtual environment
+    conda remove -n mydjango -all
   ```
 * With Python Virtual Env
     * [Python Virtual Environment](http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/)
