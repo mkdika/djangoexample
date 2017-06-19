@@ -9,6 +9,21 @@
 * Model association & One-to-Many Web form CRUD
 * Login, Logout, Remember Password, Session.
 
+### 0. Setup Python Virtual Environment
+* With Anaconda Distribution
+  ```commandline
+    # Example: conda create --name <ve-name> <package>
+    conda create --name mydjango django
+  
+    # to activate virtual environment
+    source activate mydjango
+  
+    # to deactivate virtual environment
+    source deactivate mydjango
+  ```
+* With Python Virtual Env
+    * [Python Virtual Environment](http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/)
+
 ### 1. Install and Create Django Project
 * Install django through pip, execute cmd: `pip install Django`
 * Check installed django version, execute cmd: `python -m django --version`
