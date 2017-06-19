@@ -15,6 +15,7 @@
 * Creating a new apps, execute cmd: `python manage.py startapp <app-name>`
 * To run server, execute cmd: `python manage.py runserver`
 * Run server with custom port, execute cmd: `python manage.py runserver 9696`
+* Run django command shell, execute cmd: `python manage.py shell`
 
 ### 2. Project Setup
 * Open file `<project-name>/settings.py`
@@ -41,6 +42,7 @@
     ```
 * To make a new migration of changes, execute cmd: `python manage.py makemigrations`    
 * To make a new migration by certain apps, execute cmd: `python manage.py makemigrations <apps-name>`
+* To check out the underlying SQL of migrations, execute cmd: `python manage.py sqlmigrate <apps-name> <version>`
 * To apply database changes, execute cmd: `python manage.py migrate`	
 * Time zone setup, look for `TIME_ZONE` variable, list of **TZ** available [Here](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
     ```python
@@ -67,7 +69,7 @@
 | `DATETIME` | `DateTimeField` | null, default |
 | `LONGBLOB` | `BinaryField` | null, default |
 
-* Django database association data type:
+* Django Models database association data type:
     * `ForeignKey` , a field type that allows us to create a **one-to-many** relationship.
     * `OneToOneField` , a field type that allows us to define a strict **one-to-one** relationship.
     * `ManyToManyField` , a field type which allows us to define a **many-to-many** relationship.
@@ -75,6 +77,11 @@
 For further information, view the [reference](https://docs.djangoproject.com/en/1.11/ref/models/fields/)
 
 ### 5. Making Model Queries
+* Some queries example:
+    * Select all data from model objects
+    ```python
+      Person.objects.all() 
+    ```
 * [Making Queries](https://docs.djangoproject.com/en/1.11/topics/db/queries/)
 * [Performing raw SQL queries](https://docs.djangoproject.com/en/1.11/topics/db/sql/)
 
