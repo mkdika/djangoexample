@@ -24,8 +24,14 @@
     # to remove virtual environment
     conda remove -n mydjango -all
   ```
+   
 * With Python Virtual Env
     * [Python Virtual Environment](http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/)
+
+* To view current Virtual Env Library & Version
+    ```commandline
+    pip freeze
+    ```
 
 ### 1. Install and Create Django Project
 * Install django through pip, execute cmd: `pip install Django`
