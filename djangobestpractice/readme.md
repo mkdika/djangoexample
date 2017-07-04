@@ -4,7 +4,7 @@ This guide/ reference is mainly base on the book [Two Scoop of Django](https://w
 Here are the brief recommendation and summaries.
 
 ### 1. Coding Style
-Use Python and Django coding style convention for well managed code.
+Use Python and Django coding style convention for readable well managed code.
 * [Python PEP 8](http://www.python.org/dev/peps/pep-0008/), Official style guide for Python programming language.
 * [Django Coding Style](https://docs.djangoproject.com/en/1.8/internals/contributing/writing-code/coding-style/), official documentation of Django coding style.
 
@@ -14,6 +14,41 @@ Use Python and Django coding style convention for well managed code.
 3. Use `pip` as Django dependencies installer.
 4. Use version control system (Git, Subversion, Mercurial, etc).
 5. Use [Vagrant](https://www.vagrantup.com/) and [Virtualbox](https://www.virtualbox.org/), or [Docker Container](https://www.docker.com/).
+
+### 3. Django Project Layout
+1. Use Django project template to boostrap a project (eg. [CookieCutter](https://github.com/pydanny/cookiecutter-django))
+2. Recommendation project layout:
+    ```xml
+    <repository_root>/
+       <django_project_root>/
+           <configuration_root>/
+    ```
+    
+    ```python
+    # Sample project layout   
+ 
+    icecreamratings_project/
+        .gitignore
+        Makefile
+        docs/
+        README.rst
+        requirements.txt
+        icecreamratings/ 	# project name
+            manage.py
+            media/ 			# Development ONLY!
+            products/
+            profiles/
+            ratings/
+            static/
+            templates/
+            config/
+                __init__.py
+                settings/
+                urls.py
+                wsgi.py				
+    ```
+    
+
 
 ### Other Best Practice Reference
 * [The Twelve-Factor App](https://12factor.net/)

@@ -1,4 +1,4 @@
-# Django Project Example
+# [Django](https://www.djangoproject.com/) Project Example
 ![Imgur](http://i.imgur.com/f1wjEMX.jpg)
 
 ## Target :
