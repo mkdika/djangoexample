@@ -159,4 +159,3 @@ For Django best practice guide and reference, pleas view this [page](djangobestp
 * [5 ways to make Django Admin safer](https://hackernoon.com/5-ways-to-make-django-admin-safer-eb7753698ac8)
 * [Awsome Django Lib & Template](http://awesome-django.com/)
 * [PostgreSQL specific model fields](https://docs.djangoproject.com/en/1.11/ref/contrib/postgres/fields/)
-* [Python Convention - Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
