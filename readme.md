@@ -126,7 +126,7 @@
     * [Class-based Views](https://docs.djangoproject.com/en/1.10/topics/class-based-views/)
 
 ### 8. Other Library and Addons
-* Install Python MySQL:
+* Command to install addons
     ```commandline    
     # Python Mysql
     pip install mysqlclient
@@ -147,6 +147,9 @@
     pip install bcrypt 
     ```
             
+### 9. Django Best Practice, Standard & Convention
+For Django best practice guide and reference, pleas view this [page](djangobestpractice/readme.md).
+
 ### Other References
 * [Writing your first Django app, part 1](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
 * [Using a 3rd-party database backend](https://docs.djangoproject.com/en/1.11/ref/databases/#using-a-3rd-party-database-backend)
