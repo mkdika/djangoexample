@@ -127,26 +127,26 @@
 
 ### 8. Other Library and Addons
 * Install Python MySQL:
-    ```commandline
-    pip install mysqlclient  
+    ```commandline    
+    # Python Mysql
+    pip install mysqlclient
+      
+    # Python PostgreSQL
+    pip install psycopg2
+      
+    # Django-Bootstrap-Form
+    pip install django-bootstrap-form
+     
+    # Django Jinja
+    pip install django-jinja
+     
+    # Pillow Lib (Image manipulation library for Python)
+    pip install pillow
+     
+    # Bcrypt (Secure Password Hasher)
+    pip install bcrypt 
     ```
-* Install Python PostgreSQL:
-    ```commandline
-    pip install psycopg2     
-    ```
-* Install Django-Bootstrap-Form Lib
-    ```commandline
-    pip install django-bootstrap-form     
-    ```      
-* Install Pillow Lib (Image manipulation library for Python)
-    ```commandline
-    pip install pillow     
-    ```           
-* Install Bcrypt (Secure Password Hasher)
-    ```commandline
-    pip install bcrypt     
-    ``` 
-        
+            
 ### Other References
 * [Writing your first Django app, part 1](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
 * [Using a 3rd-party database backend](https://docs.djangoproject.com/en/1.11/ref/databases/#using-a-3rd-party-database-backend)
