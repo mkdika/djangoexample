@@ -7,7 +7,7 @@ function confirmDelete(uid,path) {
 }
 
 function editPerson(path) {
-    window.location.href = path;
+     window.location.href = path;
 }
 
 

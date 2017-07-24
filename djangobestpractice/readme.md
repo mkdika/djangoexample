@@ -14,10 +14,12 @@ Use Python and Django coding style convention for readable well managed code.
 3. Use `pip` as Django dependencies installer.
 4. Use version control system (Git, Subversion, Mercurial, etc).
 5. Use [Vagrant](https://www.vagrantup.com/) and [Virtualbox](https://www.virtualbox.org/), or [Docker Container](https://www.docker.com/).
+6. Avoid Non-Versioned Local Settings.
+7. Separated configuration from code.
 
 ### 3. Django Project Layout
-1. Use Django project template to boostrap a project (eg. [CookieCutter](https://github.com/pydanny/cookiecutter-django))
-2. Recommendation project layout:
+1. Use Django project template to boostrap a project (Optional) (eg. [CookieCutter](https://github.com/pydanny/cookiecutter-django), [Django-Kevin](https://github.com/imkevinxu/django-kevin))
+2. Recommended project layout:
     ```xml
     <repository_root>/
        <django_project_root>/
@@ -33,9 +35,9 @@ Use Python and Django coding style convention for readable well managed code.
         docs/
         README.rst
         requirements.txt
-        icecreamratings/ 	# project name
+        icecreamratings/       # project name
             manage.py
-            media/ 			# Development ONLY!
+            media/             # Development ONLY!
             products/
             profiles/
             ratings/
@@ -48,7 +50,10 @@ Use Python and Django coding style convention for readable well managed code.
                 wsgi.py				
     ```
     
-
+### Useful Django Lib & Addons
+* `django-model-utils`, to handle common patterns like **TimeStampedModel**.
+* `django-crispy-forms`, advanced form layout controls.
 
 ### Other Best Practice Reference
 * [The Twelve-Factor App](https://12factor.net/)
+* [Django Model Behaviour](http://blog.kevinastone.com/django-model-behaviors.html)

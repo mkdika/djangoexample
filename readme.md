@@ -1,7 +1,7 @@
-# [Django](https://www.djangoproject.com/) Project Example
+## [Django](https://www.djangoproject.com/) Project Example
 ![Imgur](http://i.imgur.com/f1wjEMX.jpg)
 
-## Target :
+### Target :   
 * Setup Project & Apps
 * Model with all common used data type
 * Web form CRUD single table
@@ -23,14 +23,17 @@
   
     # to remove virtual environment
     conda remove -n mydjango -all
+
+    # to list all available virtual environment
+    conda info --envs
   ```
    
 * With Python Virtual Env
     * [Python Virtual Environment](http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/)
 
-* To view current Virtual Env Library & Version
+* Listing all current Virtual Env Library & Version
     ```commandline
-    pip freeze
+    pip freeze --local
     ```
 
 ### 1. Install and Create Django Project
@@ -159,3 +162,6 @@ For Django best practice guide and reference, pleas view this [page](djangobestp
 * [5 ways to make Django Admin safer](https://hackernoon.com/5-ways-to-make-django-admin-safer-eb7753698ac8)
 * [Awsome Django Lib & Template](http://awesome-django.com/)
 * [PostgreSQL specific model fields](https://docs.djangoproject.com/en/1.11/ref/contrib/postgres/fields/)
+
+### Python Tutorial
+***Comming soon...asdfasfasd***
