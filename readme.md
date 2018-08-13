@@ -15,7 +15,7 @@
 
 * With Anaconda Distribution
 
-  ```commandline
+  ```console
     # Example: conda create --name <ve-name> <package>
     conda create --name mydjango django
   
@@ -64,7 +64,7 @@
 
 * Listing all current Virtual Env Library & Version
 
-    ```commandline
+    ```console
     pip freeze --local
     ```
 
@@ -176,7 +176,7 @@
 ### 8. Other Library and Addons
 
 * Command to install addons
-    ```commandline
+    ```console
     # Python Mysql
     pip install mysqlclient
       
