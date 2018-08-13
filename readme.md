@@ -1,7 +1,9 @@
-## [Django](https://www.djangoproject.com/) Project Example
+# [Django](https://www.djangoproject.com/) Project Example
+
 ![Imgur](http://i.imgur.com/f1wjEMX.jpg)
 
-### Target :   
+## Target :
+
 * Setup Project & Apps
 * Model with all common used data type
 * Web form CRUD single table
@@ -9,8 +11,10 @@
 * Model association & One-to-Many Web form CRUD
 * Login, Logout, Remember Password, Session.
 
-### 0. Setup Python Virtual Environment
+## 0. Setup Python Virtual Environment
+
 * With Anaconda Distribution
+
   ```commandline
     # Example: conda create --name <ve-name> <package>
     conda create --name mydjango django
@@ -27,16 +31,51 @@
     # to list all available virtual environment
     conda info --envs
   ```
-   
+
 * With Python Virtual Env
-    * [Python Virtual Environment](http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/)
+
+    - Create virtual environment, execute:
+
+    ```console
+    mkvirtualenv <env-name>
+    ```
+
+    Example:
+
+    ```console
+    mkvirtualenv djangoEnv
+    ```
+
+    - activate virtual environment:
+
+    ```console
+    workon djangoEnv
+    ```
+
+    - deactivate virtual environment:
+
+    ```console
+    deactivate
+    ```
+
+    - references:
+
+    [Python Virtual Environment](http://python-guide-pt-br.readthedocs.io/en/latest/dev/virtualenvs/)
 
 * Listing all current Virtual Env Library & Version
+
     ```commandline
     pip freeze --local
     ```
 
+    or
+
+    ```console
+    pip list
+    ```
+
 ### 1. Install and Create Django Project
+
 * Install django through pip, execute cmd: `pip install Django`
 * Check installed django version, execute cmd: `python -m django --version`
 * Creating a new project, execute cmd: `django-admin startproject <project-name>`
@@ -46,6 +85,7 @@
 * Run django command shell, execute cmd: `python manage.py shell`
 
 ### 2. Project Setup
+
 * Open file `<project-name>/settings.py`
 * Search for `DATABASE` pythons dictionary variable.
 * Default `ENGINE`is SQLite: `django.db.backends.sqlite3`
@@ -78,9 +118,11 @@
     ```
 
 ### 3. Admin Page
+
  * Create an admin account, execute cmd: `python manage.py createsuperuser`
 
 ### 4. Model Fields
+
 * Common used MySQL database field to Django data type:
 
 | MySQL Field| Django Model Field | Parameters |
@@ -106,6 +148,7 @@
     * [Database Model Meta Options Reference](https://docs.djangoproject.com/en/1.11/ref/models/options/)
 
 ### 5. Making Model Queries
+
 * Some queries example:
     * Select all data from model objects
     ```python
@@ -120,17 +163,20 @@
     * [Performing raw SQL queries](https://docs.djangoproject.com/en/1.11/topics/db/sql/)
 
 ### 6. Forms Validator
+
 * __References__:
     * [Form and field validation](https://docs.djangoproject.com/en/1.11/ref/forms/validation/)
     * [Form Validators](https://docs.djangoproject.com/en/1.11/ref/validators/)
 
 ### 7. View
+
 * __References__:
     * [Class-based Views](https://docs.djangoproject.com/en/1.10/topics/class-based-views/)
 
 ### 8. Other Library and Addons
+
 * Command to install addons
-    ```commandline    
+    ```commandline
     # Python Mysql
     pip install mysqlclient
       
@@ -151,9 +197,11 @@
     ```
             
 ### 9. Django Best Practice, Standard & Convention
+
 For Django best practice guide and reference, pleas view this [page](djangobestpractice/readme.md).
 
 ### Other References
+
 * [Writing your first Django app, part 1](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
 * [Using a 3rd-party database backend](https://docs.djangoproject.com/en/1.11/ref/databases/#using-a-3rd-party-database-backend)
 * [Django-Bootstrap-Form Lib 1](https://django-bootstrap-form.readthedocs.io/en/latest/)
@@ -164,4 +212,5 @@ For Django best practice guide and reference, pleas view this [page](djangobestp
 * [PostgreSQL specific model fields](https://docs.djangoproject.com/en/1.11/ref/contrib/postgres/fields/)
 
 ### Python Tutorial
-***Comming soon...asdfasfasd***
+
+_Coming soon..._
