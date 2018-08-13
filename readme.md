@@ -2,6 +2,10 @@
 
 ![Imgur](http://i.imgur.com/f1wjEMX.jpg)
 
+## Last Update
+
+- __13 Aug 2018__, migrate to Django 2.1, adjust some code, add some `README` content.
+
 ## Target :
 
 * Setup Project & Apps
