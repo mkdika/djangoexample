@@ -46,9 +46,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crud.apps.CrudConfig',
+    'formcomponent.apps.FormcomponentConfig',
     'django_jinja',
     'bootstrapform',
     'userauth',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
